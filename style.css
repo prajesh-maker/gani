@@ -254,3 +254,19 @@ h2{
 .h2{
     text-align: center;
 }
+body{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.star{
+    font-size: 45px;
+}
+
+.checked{
+    color: orange;
+}
