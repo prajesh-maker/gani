@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>GANI FOOTWEAR</title>
+<link rel="stylesheet" href="photos.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <div class="logo">GANI FOOTWEAR</div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="photos.html">PHOTOS</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+<h1>Photos</h1>
+<p>"Good shoes take you good places.”</p>
+</div>
+</section>
+
+<body>
+    <div class="container">
+        <figure>
+            <img src="https://content.jdmagicbox.com/comp/chennai/h8/044pxx44.xx44.160727140156.l7h8/catalogue/gani-foot-wear-aminjikarai-chennai-shoe-dealers-17qkgka-250.jpg" alt="">
+        </figure>
+        <div class="slide">
+            <img src="https://content.jdmagicbox.com/comp/chennai/h8/044pxx44.xx44.160727140156.l7h8/catalogue/gani-foot-wear-chennai-kiu6j-250.jpg" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnScoFhTjkP7LyuG9s1iXjfXw-ozWu752V-Q&s" alt="">
+            <img src="https://lh3.googleusercontent.com/cN15r1L_XNZwpAXv0iGoibrNjnKFmDzX9QVlwp84KxPRlv-O2A3lD2eBohlhFgiX5FiSqeaw6AaF6j6_Kmp3PbfTFA=w300-rw" alt="">
+            <img src="https://content.jdmagicbox.com/comp/chennai/h8/044pxx44.xx44.160727140156.l7h8/catalogue/gani-foot-wear-aminjikarai-chennai-shoe-dealers-5y5iyj-250.jpg" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnScoFhTjkP7LyuG9s1iXjfXw-ozWu752V-Q&s" alt="">
+            <img src="https://imgmedia.lbb.in/media/2019/02/5c627dc8ed9bc729266f0741_1549958600815.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        const figureImg = document.querySelector('figure img');
+        const Imgs = document.querySelectorAll('.slide img');
+
+        Imgs.forEach(function(img) {
+            // console.log(img);
+            img.addEventListener('click',function(e) {
+                // console.log(e.target.src);
+                // console.log(figureImg.src);
+                figureImg.src = e.target.src;
+            })
+        })
+    </script>
+</body>
+</html>
